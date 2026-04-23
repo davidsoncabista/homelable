@@ -16,10 +16,7 @@ const NODE_TYPE_GROUPS: { label: string; types: NodeType[] }[] = [
   { label: 'Generic',        types: ['computer', 'generic', 'groupRect'] },
 ]
 
-<<<<<<< HEAD
 const CHECK_METHODS: CheckMethod[] = ['none', 'ping', 'http', 'https', 'tcp', 'ssh', 'prometheus', 'health', 'proxmox']
-=======
-const CHECK_METHODS: CheckMethod[] = ['none', 'ping', 'http', 'https', 'tcp', 'ssh', 'prometheus', 'health']
 const CONTAINER_MODE_TYPES: NodeType[] = ['proxmox', 'vm', 'lxc', 'docker_host']
 
 const CHECK_METHOD_LABELS: Record<CheckMethod, string> = {
@@ -31,8 +28,8 @@ const CHECK_METHOD_LABELS: Record<CheckMethod, string> = {
   ssh: 'SSH',
   prometheus: 'Prometheus',
   health: 'Health',
+  proxmox: 'Proxmox',
 }
->>>>>>> main
 
 const DEFAULT_DATA: Partial<NodeData> = {
   type: 'server',
